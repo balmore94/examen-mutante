@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:chalupas99@cluster0.6zxtl.mongodb.net/?retryWrites=true&w=majority
+      repositories:
+        type: AUTO
+      database: mutant
+
+#server:
+#  port: 8080
+
+logging:
+  level:
+    root: info
+    com.mercadolibre.exam.mutant: DEBUG
+    org.springframework.integration: info
+    org.springframework.data.mongodb: info
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
